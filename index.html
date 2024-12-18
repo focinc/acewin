@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --clr-accent: #00b3ff;
+        --clr-accent-2: #00ffff;
+      }
+
+      .ff-accent {
+        color: var(--clr-accent);
+      }
+
+      .ff-accent-2 {
+        color: var(--clr-accent-2);
+      }
+
+      .blinking-text {
+        animation: blink 2s ease infinite;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        text-shadow: 0 0 2px #ddffff;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .form-wrapper {
+        background: #ffffff26;
+        background: rgba(40, 40, 40, 0.3);
+        box-shadow: 0 8px 32px 0 #1f26875e;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(14px);
+        border-radius: 10px;
+        border: 2px solid #b402e0;
+      }
+
+      .form-field-input {
+        padding: 0.5rem 0.3rem;
+        color: black;
+        background-color: #35034199;
+        color: white;
+        text-align: center;
+        border: 1px solid #ec9eff;
+      }
+
+      .btn {
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        opacity: 0.8;
+        background-image: linear-gradient(180deg, #00d5ff, #00b3ff);
+        transition: all 0.5s ease;
+      }
+
+      .btn:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[url('./bg-2.png')] bg-cover bg-center h-screen flex justify-center items-center px-2"
+  >
+    <div class="form-wrapper w-[30rem] p-8 text-center">
+      <div class="header mb-7">
+        <h1
+          class="title blinking-text ff-accent-2 text-[2.5rem] font-bold leading-[3rem] mb-4"
+        >
+          Acewin Game <br />
+          Pre-Registration
+        </h1>
+        <p class="text-sm text-white">
+          Our exciting new casino game. By pre-registering, you'll be one of the
+          first players to experience the game and enjoy exclusive bonuses when
+          it launches!
+        </p>
+      </div>
+
+      <form action="" class="form text-white">
+        <div class="form-field grid mb-4">
+          <label for="" class="form-field-label font-semibold text-sm mb-1"
+            >Name:
+          </label>
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-field-input rounded-md"
+          />
+        </div>
+
+        <div class="form-field grid mb-4">
+          <label for="" class="form-field-label font-semibold text-sm mb-1"
+            >Contact Number:</label
+          >
+          <input
+            type="text"
+            name=""
+            id=""
+            class="form-field-input rounded-md"
+          />
+        </div>
+
+        <button class="btn w-full rounded-md">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
