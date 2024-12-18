@@ -3,127 +3,158 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Acewin Pre-registration</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
-    <style>
-      :root {
-        --clr-accent: #00b3ff;
-        --clr-accent-2: #00ffff;
-      }
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-      .ff-accent {
-        color: var(--clr-accent);
-      }
-
-      .ff-accent-2 {
-        color: var(--clr-accent-2);
-      }
-
-      .blinking-text {
-        animation: blink 2s ease infinite;
-        font-weight: bold;
-        font-family: "Poppins", sans-serif;
-        text-shadow: 0 0 2px #ddffff;
-      }
-
-      @keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0.3;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      .form-wrapper {
-        background: #ffffff26;
-        background: rgba(40, 40, 40, 0.3);
-        box-shadow: 0 8px 32px 0 #1f26875e;
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(14px);
-        border-radius: 10px;
-        border: 2px solid #b402e0;
-      }
-
-      .form-field-input {
-        padding: 0.5rem 0.3rem;
-        color: black;
-        background-color: #35034199;
-        color: white;
-        text-align: center;
-        border: 1px solid #ec9eff;
-      }
-
-      .btn {
-        font-weight: bold;
-        padding: 0.5rem 1rem;
-        opacity: 0.8;
-        background-image: linear-gradient(180deg, #00d5ff, #00b3ff);
-        transition: all 0.5s ease;
-      }
-
-      .btn:hover {
-        opacity: 1;
-      }
-    </style>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body
-    class="bg-[url('./bg-2.png')] bg-cover bg-center h-screen flex justify-center items-center px-2"
-  >
-    <div class="form-wrapper w-[30rem] p-8 text-center">
-      <div class="header mb-7">
-        <h1
-          class="title blinking-text ff-accent-2 text-[2.5rem] font-bold leading-[3rem] mb-4"
-        >
-          Acewin Game <br />
-          Pre-Registration
-        </h1>
-        <p class="text-sm text-white">
-          Our exciting new casino game. By pre-registering, you'll be one of the
-          first players to experience the game and enjoy exclusive bonuses when
-          it launches!
-        </p>
+  <body>
+    <!-- ads -->
+    <div class="ads-wrapper">
+      <div class="ads">
+        <button id="close-ads-btn" class="close-ads-btn">
+          <img src="./img/cross.png" alt="" class="w-10" />
+        </button>
+        <img src="./img/ads.png" alt="" class="ads-img w-[100vw] lg:w-[60vw]" />
       </div>
+    </div>
 
-      <form action="" class="form text-white">
-        <div class="form-field grid mb-4">
-          <label for="" class="form-field-label font-semibold text-sm mb-1"
-            >Name:
+    <!-- live video -->
+    <div class="live-video-wrapper px-3">
+      <div class="live-video w-full lg:w-[50vw]">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/_RsoxLtVHSg"
+          title="MAX PAIN MONDAY!! Sashimi, Coco, Ronnie &amp; Raver - Commentary by David Tuchman"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- form -->
+    <div class="form-wrapper px-3">
+      <form class="form w-full lg:w-[30rem]">
+        <div class="header mb-7">
+          <img src="./img/logo-2.png" alt="" class="w-36 mx-auto" />
+          <p class="text-sm text-white">
+            Pre-register now to be among the first to play our new casino game
+            and receive exclusive bonuses at launch!
+          </p>
+        </div>
+
+        <div class="form-field mb-4">
+          <label for="" class="form-field-label"> Full Name: </label>
+          <input type="text" class="form-field-input" />
+        </div>
+
+        <div class="form-field mb-5">
+          <label for="" class="form-field-label"> Phone Number: </label>
+          <input type="text" class="form-field-input" />
+        </div>
+
+        <button class="btn w-full text-center mb-4">Register</button>
+
+        <div class="form-field flex items-start gap-2">
+          <input type="checkbox" name="" id="" />
+          <label class="form-field-label text-xs" style="text-align: left">
+            By signing up, you agree to receive game money through the phone
+            number entered during pre-registration.
           </label>
-          <input
-            type="text"
-            name=""
-            id=""
-            class="form-field-input rounded-md"
-          />
         </div>
-
-        <div class="form-field grid mb-4">
-          <label for="" class="form-field-label font-semibold text-sm mb-1"
-            >Contact Number:</label
-          >
-          <input
-            type="text"
-            name=""
-            id=""
-            class="form-field-input rounded-md"
-          />
-        </div>
-
-        <button class="btn w-full rounded-md">Register</button>
       </form>
     </div>
+
+    <main class="main grid gap-5 max-w-screen-xl mx-auto px-2 lg:grid-cols-2">
+      <div class="sd-l hidden lg:block">
+        <img
+          src="./img/subject-roll.png"
+          alt=""
+          class="img md:object-contain"
+        />
+        <img src="./img/subject-roll-stars.png" alt="" />
+      </div>
+
+      <div class="sd-r mt-36">
+        <img src="./img/logo.png" alt="" class="w-48 mx-auto lg:ms-[unset]" />
+        <h1 class="title mb-2 text-center lg:text-left">
+          Get <span class="text-highlight">200 Pesos</span> Just for
+          Registering!
+        </h1>
+        <p class="text-center lg:text-left">
+          Join the Best Casino Experience Today, Claim Your 200 Peso Bonus, and
+          Start Winning Big! Play, Enjoy, and Explore Endless Excitement with
+          Every Bet!
+        </p>
+
+        <div
+          class="btn-group flex items-center flex-col gap-8 mt-10 lg:flex-row"
+        >
+          <button class="btn w-full lg:w-fit" id="open-registration-btn">
+            Register Now!
+            <img src="./img/double arrow.png" alt="" />
+          </button>
+
+          <button
+            id="open-live-btn"
+            class="flex gap-3 items-center font-semibold"
+            id="open-live-btn"
+          >
+            <div class="btn-round">
+              <img src="./img/video.png" alt="" />
+            </div>
+            Join live gaming
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const olb = document.querySelector("#open-live-btn");
+      const lvw = document.querySelector(".live-video-wrapper");
+
+      olb.addEventListener("click", () => {
+        lvw.classList.add("active");
+      });
+
+      lvw.addEventListener("click", function (event) {
+        if (event.target === this) {
+          this.classList.remove("active");
+        }
+      });
+
+      const orb = document.querySelector("#open-registration-btn");
+      const fw = document.querySelector(".form-wrapper");
+
+      orb.addEventListener("click", () => {
+        fw.classList.add("active");
+      });
+
+      fw.addEventListener("click", function (event) {
+        if (event.target === this) {
+          this.classList.remove("active");
+        }
+      });
+
+      const cab = document.querySelector("#close-ads-btn");
+      const ads = document.querySelector(".ads-wrapper");
+
+      cab.addEventListener("click", () => {
+        ads.style.display = "none";
+      });
+    </script>
   </body>
 </html>
