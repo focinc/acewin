@@ -192,8 +192,7 @@ video {
 }
 .form-wrapper .form {
   padding: 2rem 1rem;
-  background: rgba(255, 255, 255, 0.1490196078);
-  background: rgba(40, 40, 40, 0.5);
+  background: rgba(21, 21, 21, 0.8);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.368627451);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(14px);
@@ -227,6 +226,12 @@ video {
   padding: 0.5rem;
   border-radius: 0.3rem;
   text-align: center;
+}
+.form-wrapper .form-field-error {
+  font-size: 0.8rem;
+  color: rgb(241, 40, 40);
+  margin-top: 0.4rem;
+  display: none;
 }
 .form-wrapper .form .btn {
   padding-block: 0.8rem;

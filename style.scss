@@ -230,8 +230,7 @@ video {
 
   .form {
     padding: 2rem 1rem;
-    background: #ffffff26;
-    background: rgba(40, 40, 40, 0.5);
+    background: rgba(21, 21, 21, 0.8);
     box-shadow: 0 8px 32px 0 #1f26875e;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(14px);
@@ -268,6 +267,13 @@ video {
         padding: 0.5rem;
         border-radius: 0.3rem;
         text-align: center;
+      }
+
+      &-error {
+        font-size: 0.8rem;
+        color: rgb(241, 40, 40);
+        margin-top: 0.4rem;
+        display: none;
       }
     }
 
