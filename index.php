@@ -94,7 +94,7 @@
 
           <button class="btn w-full text-center mb-4">Pre-Register</button>
 
-          <div class="form-field flex items-start gap-2">
+          <div class="form-field flex items-start gap-2 mb-2">
             <input type="checkbox" name="agreement" id="agreement" required />
             <label class="form-field-label text-xs" style="text-align: left">
               I am over 18 year old.
