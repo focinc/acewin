@@ -14,10 +14,10 @@
     />
 
     <!-- tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <!-- css -->
-    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="./output.css" />
   </head>
 
   <body>
