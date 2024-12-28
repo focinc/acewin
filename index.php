@@ -153,7 +153,7 @@
     <!-- pre register event -->
     <section class="pregis-event px-3">
       <div class="pregis-event-container max-w-screen-xl mx-auto">
-        <div class="header mb-14">
+        <div class="header mb-10">
           <h2 class="title mb-2">Pre-registration event</h2>
           <p>Pre-register Now for Exclusive Casino Rewards!</p>
         </div>
@@ -195,8 +195,8 @@
           </div>
         </div>
 
-        <div class="mb-14 lg:text-center text-xs mb-1">
-          <h4 class="title-note">Note:</h4>
+        <div class="mb-14 lg:text-center text-xs ">
+          <h4 class="title-note mb-1">Note:</h4>
 
           <p>
             Get 10,000 pesos for recharges over 100,000 pesos. For lower
