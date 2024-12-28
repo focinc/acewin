@@ -199,8 +199,7 @@
           <h4 class="title-note mb-1">Note:</h4>
 
           <p>
-            Get 10,000 pesos for recharges over 100,000 pesos. For lower
-            amounts, enjoy a 5% reward.
+            The maximum amount that is available to be provided is 10,000 pesos.
           </p>
         </div>
 
