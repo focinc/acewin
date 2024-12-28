@@ -53,6 +53,10 @@
   background-color: var(--clr-accent);
 }
 
+.text-highlight {
+  color: #24ffff;
+}
+
 // html,
 // body {
 //   height: 100%;
@@ -172,6 +176,12 @@ body {
             display: none;
           }
         }
+      }
+
+      .title-note {
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgb(241, 62, 62);
       }
 
       .btn-reg {

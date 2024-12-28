@@ -2606,11 +2606,7 @@ video {
   border-radius: 1rem;
   border: 4px solid var(--clr-light);
   color: var(--clr-light);
-  background-image: linear-gradient(
-    0deg,
-    var(--clr-accent-2),
-    var(--clr-accent)
-  );
+  background-image: linear-gradient(0deg, var(--clr-accent-2), var(--clr-accent));
 }
 
 .btn-round {
@@ -2622,6 +2618,10 @@ video {
   border-radius: 3.5rem;
   border: 4px solid var(--clr-light);
   background-color: var(--clr-accent);
+}
+
+.text-highlight {
+  color: #24ffff;
 }
 
 body {
@@ -2739,6 +2739,12 @@ body {
   .main .pregis-event-container .chart .chart-separator {
     display: none;
   }
+}
+
+.main .pregis-event-container .title-note {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(241, 62, 62);
 }
 
 .main .pregis-event-container .btn-reg {
@@ -3151,6 +3157,26 @@ video {
     gap: 3.5rem;
   }
 
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .lg\:px-\[5rem\] {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-\[15rem\] {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
   .lg\:text-center {
     text-align: center;
   }
@@ -3163,5 +3189,4 @@ video {
     }
   }
 }
-
 /*# sourceMappingURL=output.css.map */

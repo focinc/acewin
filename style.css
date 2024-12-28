@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --clr-accent: #26a4ff;
   --clr-accent-2: #2a49f9;
@@ -19,7 +18,7 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .text-highlight {
@@ -36,11 +35,7 @@
   border-radius: 1rem;
   border: 4px solid var(--clr-light);
   color: var(--clr-light);
-  background-image: linear-gradient(
-    0deg,
-    var(--clr-accent-2),
-    var(--clr-accent)
-  );
+  background-image: linear-gradient(0deg, var(--clr-accent-2), var(--clr-accent));
 }
 
 .btn-round {
@@ -52,6 +47,10 @@
   border-radius: 3.5rem;
   border: 4px solid var(--clr-light);
   background-color: var(--clr-accent);
+}
+
+.text-highlight {
+  color: #24ffff;
 }
 
 body {
@@ -152,6 +151,11 @@ body {
   .main .pregis-event-container .chart .chart-separator {
     display: none;
   }
+}
+.main .pregis-event-container .title-note {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(241, 62, 62);
 }
 .main .pregis-event-container .btn-reg {
   width: 70vw;
@@ -408,4 +412,4 @@ video {
 }
 .form-wrapper .form-container .form .btn {
   padding-block: 0.8rem;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
