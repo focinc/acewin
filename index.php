@@ -55,7 +55,7 @@
       <form
         class="form w-full lg:w-[30rem]"
         method="POST"
-        action="./process/register.php">
+        action="./process/register.php" method="POST" action="./process/register.php">
         <!--  method="POST" action="./process/register.php" -->
         <div class="header mb-7">
           <img src="./img/logo-2.png" alt="" class="w-36 mx-auto" />
