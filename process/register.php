@@ -17,45 +17,37 @@ function generateUserID()
 $user_id = $full_name = $phone_number = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $full_name = $_POST['full_name'];
-    $phone_number = $_POST['phone_number'];
-    $user_id = generateUserID();
+    if (isset($_POST['full_name']) && isset($_POST['phone_number'])) {
+        $full_name = $_POST['full_name'];
+        $phone_number = $_POST['phone_number'];
+        $user_id = generateUserID();
 
-    // query
-    $stmt = $conn->prepare("SELECT * FROM artb_ad_db.blckwin_T_DAT_users WHERE phone_number = ?");
+        // Check if the phone number already exists
+        $stmt = $conn->prepare("SELECT * FROM artb_ad_db.blckwin_T_DAT_users WHERE phone_number = ?");
+        $stmt->bind_param("s", $phone_number);
 
-    // bind parameters
-    $stmt->bind_param("s", $phone_number);
+        if (!$stmt->execute()) {
+            echo "Error in executing query: " . $stmt->error;
+            exit();
+        }
 
-    // checks if the prepared statement was successfully created
-    if (!$stmt->execute()) {
-        echo "Error in preparing statement: " . $stmt->error;
-        exit();
-    }
+        $result = $stmt->get_result();
 
-    // get the result
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-
-        $row = $result->fetch_assoc();
-
-        if (trim($row["phone_number"]) === trim($phone_number)) {
+        if ($result->num_rows > 0) {
+            // Phone number exists
             header("Location: https://blockwin.fun/acewin?error=phoneexisted");
             exit();
         } else {
-            // query
+            // Insert new record
             $stmt = $conn->prepare("INSERT INTO artb_ad_db.blckwin_T_DAT_users (userid, full_name, phone_number) VALUES (?, ?, ?)");
-
-            // bind parameters
             $stmt->bind_param("sss", $user_id, $full_name, $phone_number);
 
-            // checks if the prepared statement was successfully created
             if (!$stmt->execute()) {
-                echo "Error in preparing statement: " . $stmt->error;
+                echo "Error in executing query: " . $stmt->error;
                 exit();
             }
 
+            // Redirect to success page
             header("Location: https://blockwin.fun/acewin");
             exit();
         }
