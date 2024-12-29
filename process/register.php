@@ -10,8 +10,17 @@ include 'db_connect.php';
 // Function to generate a 10-digit alphanumeric user ID
 function generateUserID()
 {
-    //return substr(uniqid(), -10);
-    return rand(1000000000, 9999999999);
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    $length = 12;
+    $userID = '';
+
+    // Generate a random ID
+    for ($i = 0; $i < $length; $i++) {
+        $userID .= $characters[rand(0, strlen($characters) - 1)];
+    }
+
+    return $userID;
 }
 
 // Initialize variables to store form data
