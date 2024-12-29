@@ -10,13 +10,16 @@ include 'db_connect.php';
 // Function to generate a 10-digit alphanumeric user ID
 function generateUserID()
 {
-    return substr(uniqid(), -10);
+    //return substr(uniqid(), -10);
+    return rand(1000000000, 9999999999);
 }
 
 // Initialize variables to store form data
 $user_id = $full_name = $phone_number = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    echo "Form submitted successfully.";
+
     if (isset($_POST['full_name']) && isset($_POST['phone_number'])) {
         $full_name = $_POST['full_name'];
         $phone_number = $_POST['phone_number'];
