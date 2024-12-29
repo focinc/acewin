@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user_id = generateUserID();
 
     // query
-    $stmt = $conn->prepare("SELECT * FROM artb_ad_db.blckwin_T_DAT_users WHERE phone = ?");
+    $stmt = $conn->prepare("SELECT * FROM artb_ad_db.blckwin_T_DAT_users WHERE phone_number = ?");
 
     // bind parameters
     $stmt->bind_param("s", $phone_number);
