@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt = $conn->prepare("INSERT INTO artb_ad_db.blckwin_T_DAT_users (userid, full_name, phone_number) VALUES (?, ?, ?)");
 
             // bind parameters
-            $stmt->bind_param("ssssissss", $user_id, $full_name, $phone_number);
+            $stmt->bind_param("sss", $user_id, $full_name, $phone_number);
 
             // checks if the prepared statement was successfully created
             if (!$stmt->execute()) {
