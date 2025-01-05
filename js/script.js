@@ -5,12 +5,12 @@ function togglePreview(previewElementId, openButtonId, closeButtonId) {
 
   openButton.addEventListener("click", () => {
     previewElement.classList.add("active");
-    document.body.style.overflow = "hidden";
+    //document.body.style.overflow = "hidden";
   });
 
   closeButton.addEventListener("click", () => {
     previewElement.classList.remove("active");
-    document.body.style.overflow = "scroll";
+    //document.body.style.overflow = "scroll";
   });
 }
 
