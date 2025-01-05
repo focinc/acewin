@@ -7,6 +7,7 @@
   <title>Acewin Pre-registration</title>
 
   <!-- css / tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/output.css" />
 
   <!-- google font -->
