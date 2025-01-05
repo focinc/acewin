@@ -29,6 +29,6 @@ closeErrButton.addEventListener("click", () => {
 
 const urlParams = new URLSearchParams(window.location.search);
 
-if (urlParams.has("phoneexisted")) {
+if (urlParams.has("error") && urlParams.get("error") === "phoneexisted") {
   errModal.classList.add("active");
 }
