@@ -115,10 +115,6 @@
 
         <!-- form -->
         <div class="form-wrapper p-7">
-          <button id="btn-cls-prgs" class="btn-play">
-            <img src="./image/btn-close.png" alt="play button" />
-          </button>
-
           <div class="header text-center mb-14">
             <h2 class="title">Pre-registration</h2>
             <p class="sub-title">
@@ -176,14 +172,16 @@
             </button>
           </form>
         </div>
+
+        <button id="btn-cls-prgs" class="btn-play">
+          <img src="./image/btn-close.png" alt="play button" />
+        </button>
       </div>
     </div>
 
     <!-- error handler -->
     <div id="stsmdl" class="modal px-3">
       <div class="card">
-        <!-- <button><img src="./image/icon-close.png" alt="close" /></button> -->
-
         <div class="icon">
           <img src="./image/icon-close.png" alt="close" />
         </div>

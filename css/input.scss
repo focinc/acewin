@@ -591,6 +591,7 @@ main {
   left: 0;
   background-color: rgba(2, 2, 3, 0.8);
   z-index: 1000;
+  overflow-y: scroll;
   display: none;
 
   &.active {
@@ -661,6 +662,7 @@ main {
         }
       }
     }
+
     .form-wrapper {
       @media (min-width: 1024px) {
         width: 50%;
@@ -679,35 +681,6 @@ main {
       .header {
         @media (min-width: 1280px) {
           display: none;
-        }
-      }
-
-      .btn-play {
-        position: absolute;
-        bottom: -16%;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-
-        @media (min-width: 1024px) {
-          left: unset;
-          right: -7%;
-          bottom: unset;
-          top: -7%;
-          transform: unset;
-        }
-
-        @media (min-width: 1280px) {
-          right: -7%;
-          top: -7%;
-        }
-
-        img {
-          width: 4rem;
-
-          @media (min-width: 1024px) {
-            width: unset;
-          }
         }
       }
 
@@ -745,6 +718,35 @@ main {
           img {
             width: 100%;
           }
+        }
+      }
+    }
+
+    .btn-play {
+      position: absolute;
+      bottom: -16%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+
+      @media (min-width: 1024px) {
+        left: unset;
+        right: -7%;
+        bottom: unset;
+        top: -7%;
+        transform: unset;
+      }
+
+      @media (min-width: 1280px) {
+        right: -7%;
+        top: -7%;
+      }
+
+      img {
+        width: 4rem;
+
+        @media (min-width: 1024px) {
+          width: unset;
         }
       }
     }
