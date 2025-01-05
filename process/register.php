@@ -29,9 +29,9 @@ $user_id = $full_name = $phone_number = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Form submitted successfully.";
 
-    if (isset($_POST['full_name']) && isset($_POST['phone_number'])) {
-        $full_name = $_POST['full_name'];
-        $phone_number = $_POST['phone_number'];
+    if (isset($_POST['fllnm']) && isset($_POST['ctctnmb'])) {
+        $full_name = $_POST['fllnm'];
+        $phone_number = $_POST['ctctnmb'];
         $user_id = generateUserID();
 
         // Check if the phone number already exists

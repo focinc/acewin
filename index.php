@@ -6,367 +6,450 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acewin Pre-registration</title>
 
-  <!-- google fonts -->
+  <!-- css / tailwind -->
+  <link rel="stylesheet" href="./css/output.css" />
+
+  <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
-
-  <!-- tailwindcss -->
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-  <!-- css -->
-  <link rel="stylesheet" href="./output.css" />
 </head>
 
 <body>
-  <!-- ads -->
-  <!-- <div class="ads-wrapper hidden">
-      <div class="ads">
-        <button id="close-ads-btn" class="close-ads-btn">
-          <img src="./img/cross.png" alt="" class="w-10" />
-        </button>
-        <img src="./img/ads.png" alt="" class="ads-img w-[75vw] lg:w-[20vw]" />
-      </div>
-    </div> -->
-
-  <!-- live video -->
-  <div class="live-video-wrapper px-3">
-    <div class="live-video w-full lg:w-[50vw]">
+  <!-- main preview -->
+  <div id="prvw-mn" class="preview">
+    <div class="preview-container px-3">
       <iframe
         class="w-full h-full"
-        src="https://www.youtube.com/embed/_RsoxLtVHSg"
-        title="MAX PAIN MONDAY!! Sashimi, Coco, Ronnie &amp; Raver - Commentary by David Tuchman"
+        src="https://www.youtube.com/embed/qQJIqOZh5Ms"
+        title="Gameplay Interactive Live Casino Trailer"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen></iframe>
+
+      <button id="btn-cls-prvw-mn" class="btn-play">
+        <img src="./image/btn-close.png" alt="play button" />
+      </button>
     </div>
   </div>
 
-  <!-- form -->
-  <div class="form-wrapper px-3">
-    <div class="form-container">
-      <!-- <div class="image">
-          <img src="./img/ads.png" alt="" />
-        </div> -->
+  <!-- slot game preview -->
+  <div id="prvw-slt-gms" class="preview">
+    <div class="preview-container px-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/qQJIqOZh5Ms"
+        title="Gameplay Interactive Live Casino Trailer"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
 
-      <form
-        class="form w-full lg:w-[30rem]"
-        method="POST"
-        action="./process/register.php" method="POST" action="./process/register.php">
-        <div class="header mb-7">
-          <img src="./img/logo-2.png" alt="" class="w-36 mx-auto" />
-          <p class="text-sm text-white">
-            Pre-register now to be among the first to play our new casino game
-            and receive exclusive bonuses at launch!
+      <button id="btn-cls-prvw-slt" class="btn-play">
+        <img src="./image/btn-close.png" alt="play button" />
+      </button>
+    </div>
+  </div>
+
+  <!-- poker game preview -->
+  <div id="prvw-pkr-gms" class="preview">
+    <div class="preview-container px-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/qQJIqOZh5Ms"
+        title="Gameplay Interactive Live Casino Trailer"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+
+      <button id="btn-cls-prvw-pkr" class="btn-play">
+        <img src="./image/btn-close.png" alt="play button" />
+      </button>
+    </div>
+  </div>
+
+  <!-- wheel of fortune preview -->
+  <div id="prvw-wof-gms" class="preview">
+    <div class="preview-container px-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/qQJIqOZh5Ms"
+        title="Gameplay Interactive Live Casino Trailer"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+
+      <button id="btn-cls-prvw-wof" class="btn-play">
+        <img src="./image/btn-close.png" alt="play button" />
+      </button>
+    </div>
+  </div>
+
+  <!-- pregis form -->
+  <div id="prgs-frm" class="pregis px-3">
+    <div class="pregis-container">
+      <!-- image -->
+      <div class="image-wrapper">
+        <div class="header mb-14 lg:px-5 lg:pt-5">
+          <h2 class="title glow-text-white">Pre-registration</h2>
+          <p class="sub-title">
+            Join now and grab your 100 pesos welcome bonus just for signing
+            up!
           </p>
         </div>
 
-        <div class="form-field mb-4">
-          <label for="" class="form-field-label"> Full Name: </label>
-          <input
-            type="text"
-            id="full_name"
-            name="full_name"
-            class="form-field-input"
-            required />
+        <div class="image">
+          <img src="./image/pregis-casino.png" alt="casino" />
         </div>
+      </div>
 
-        <div class="form-field mb-5">
-          <label for="" class="form-field-label"> Phone Number: </label>
-          <input
-            type="text"
-            id="phone_number"
-            name="phone_number"
-            class="form-field-input"
-            required />
-          <span class="form-field-error" id="phone_number_error">format should 09xxxxxxxxx</span>
-        </div>
+      <!-- form -->
+      <div class="form-wrapper p-7">
+        <button id="btn-cls-prgs" class="btn-play">
+          <img src="./image/btn-close.png" alt="play button" />
+        </button>
 
-        <button class="btn w-full text-center mb-4">Pre-Register</button>
+        <div class="header text-center mb-14">
+          <h2 class="title">Pre-registration</h2>
+          <p class="sub-title">
+            Join now and grab your 100 pesos welcome bonus just for signing
+            up!
+          </p>
+        </div>
+        <form class="form" method="POST" action="./process/register.php">
+          <div class="form-field mb-7">
+            <label for="" class="form-field-label mb-2">Full Name</label>
+            <input
+              type="text"
+              name="fllnm"
+              id="fllnm"
+              class="form-field-input"
+              required />
+          </div>
 
-        <div class="form-field flex items-start gap-2 mb-2">
-          <input type="checkbox" name="agreement" id="agreement" required />
-          <label class="form-field-label text-xs" style="text-align: left">
-            I am over 18 year old.
-          </label>
-        </div>
-        <div class="form-field flex items-start gap-2">
-          <input type="checkbox" name="agreement" id="agreement" required />
-          <label class="form-field-label text-xs" style="text-align: left">
-            I agree to collecting and using my personal information.
-          </label>
-        </div>
-      </form>
+          <div class="form-field mb-7">
+            <label for="" class="form-field-label mb-2">Contact Number</label>
+            <input
+              type="text"
+              name="ctctnmb"
+              id="ctctnmb"
+              class="form-field-input"
+              required />
+          </div>
+
+          <div class="form-field flex items-start gap-2 mb-3">
+            <input
+              type="checkbox"
+              name="chckb1"
+              id="chckb1"
+              class="form-field-check mt-[1px]" />
+            <label for="" class="form-field-label">I am 18 year of age</label>
+          </div>
+
+          <div class="form-field flex items-start gap-2 mb-10">
+            <input
+              type="checkbox"
+              name="chckb2"
+              id="chckb2"
+              class="form-field-check mt-[1px]" />
+            <label for="" class="form-field-label">I agree to collecting and using my personal information.</label>
+          </div>
+
+          <button id="btn-regis" class="btn-regis mx-auto block">
+            <img src="./image/btn-regis.png" alt="pregis button" />
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 
-  <main class="main">
+  <!-- error handler -->
+  <div id="stsmdl" class="modal px-3 active">
+    <div class="card">
+      <!-- <button><img src="./image/icon-close.png" alt="close" /></button> -->
+
+      <div class="icon">
+        <img src="./image/icon-close.png" alt="close" />
+      </div>
+
+      <div class="body text-center mb-4">
+        <h3 class="title mb-2">Contact Number Already Exists</h3>
+        <p class="content">
+          The contact number you entered is already registered in our system.
+          Please use a different contact number or log in to your account.
+        </p>
+      </div>
+
+      <button id="btn-stsmdl" class="btn">Close</button>
+    </div>
+  </div>
+
+  <main>
     <!-- hero -->
     <section class="hero">
+      <div class="bgl">
+        <img
+          src="./image/hero-background-roullete.png"
+          alt="background"
+          class="img" />
+      </div>
+      <div class="bgr">
+        <img
+          src="./image/hero-background-roullete.png"
+          alt="background"
+          class="img" />
+      </div>
+
+      <div class="hero-container max-w-screen-xl mx-auto px-2">
+        <div class="hero-content flex flex-col items-center">
+          <a href="#" class="logo mb-2"><img src="./image/logo.png" alt="logo" class="w-56" /></a>
+          <h3 class="glow-text-white text text-center mb-14">
+            Ace the Game <br />
+            Win Big
+          </h3>
+
+          <button id="btn-opn-prvw-mn" class="btn-play mb-14">
+            <img src="./image/btn-video.png" alt="play button" />
+          </button>
+
+          <button id="btn-prgs" class="mb-4 text-[12px]">
+            <img src="./image/btn-pregis.png" alt="pregis button" />
+          </button>
+
+          <p
+            class="text-center px-2 mb-8 md:px-24 lg:px-[15rem] xl:px-[24rem]">
+            Pre-register today to secure exciting rewards and bonuses as a
+            thank you for being one of our first participants!
+          </p>
+
+          <div class="btn-group flex gap-3">
+            <a href="#"><img src="./image/btn-google-play.png" alt="download app" /></a>
+            <a href="#"><img src="./image/btn-play-store.png" alt="download app" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- registration features -->
+    <section class="feature">
       <div
-        class="hero-container max-w-screen-xl mx-auto grid gap-5 px-2 py-5 place-center">
-        <div class="hero-r">
-          <div class="logo">
-            <img
-              src="./img/assets/logo.png"
-              alt=""
-              class="mx-auto lg:ms-[unset]" />
-          </div>
-          <h1 class="title mb-14 text-center">Ace the Game, Win Big</h1>
-
-          <button class="btn-reg mx-auto block" id="open-registration-btn">
-            <img src="./img/assets/btn-pre-register.png" alt="" />
-          </button>
-
-          <div
-            class="btn-group flex items-center justify-center gap-3 mt-10 mb-14">
-            <button class="" id="open-registration-btn">
-              <img src="./img/assets/appstore.png" alt="" />
-            </button>
-            <button class="" id="open-registration-btn">
-              <img src="./img/assets/googleplay.png" alt="" />
-            </button>
-          </div>
-
-          <button
-            id="open-live-btn"
-            class="flex gap-3 items-center font-semibold mx-auto"
-            id="open-live-btn">
-            <div class="btn-round">
-              <img src="./img/video.png" alt="" class="ps-[3px]" />
-            </div>
-            Join live gaming
-          </button>
-        </div>
-
-        <!-- <div class="scroll-down flex flex-col items-center">
-            <p class="mb-1">SCROLL DOWN</p>
-            <img src="./img/assets/double-arrow-down.png" alt="" class="w-3" />
-          </div> -->
-      </div>
-    </section>
-
-    <!-- pre register event -->
-    <section class="pregis-event px-3">
-      <div class="pregis-event-container max-w-screen-xl mx-auto">
-        <div class="header mb-10">
-          <h2 class="title mb-2">Pre-registration event</h2>
-          <p>Pre-register Now for Exclusive Casino Rewards!</p>
+        class="feature-container max-w-screen-xl mx-auto py-32 px-2 md:px-4">
+        <div class="header text-center mb-20">
+          <h1 class="title glow-text-white uppercase">
+            Pre-registration <br />
+            Event
+          </h1>
+          <p class="sub-title">
+            Pre-register Now for Exclusive Casino Rewards!
+          </p>
         </div>
 
         <div
-          class="chart flex flex-col justify-center lg:gap-14 lg:flex-row lg:mb-14 lg:px-[15rem]">
-          <div
-            class="chart-item flex items-center justify-start gap-6 lg:flex-col lg:justify-start">
-            <div class="chart-item-image">
+          class="feature-items flex flex-col lg:flex-row lg:justify-around lg:gap-14">
+          <div class="feature-item flex items-center mb-20 lg:flex-col">
+            <div class="feature-item-img a">
               <img
-                src="./img/assets/cash-1.png"
-                alt=""
-                class="h-full w-full object-contain" />
+                src="./image/pregis-coins.png"
+                alt="feature image"
+                class="img" />
             </div>
 
-            <p class="lg:text-center">
-              Sign up now and get a
-              <span class="text-highlight">100 pesos</span> welcome bonus upon
-              registration.
+            <p class="feature-item-text text-right px-2 lg:text-center">
+              Sign up now and receive a
+              <span class="text-hl-accent-2 font-bold">100 pesos</span>
+              welcome bonus upon registration!
             </p>
           </div>
 
-          <span class="chart-separator"></span>
-
-          <div
-            class="chart-item flex items-center justify-start gap-6 lg:flex-col lg:justify-start">
-            <div class="chart-item-image">
+          <div class="feature-item flex items-center mb-20 lg:flex-col">
+            <div class="feature-item-img b order-2">
               <img
-                src="./img/assets/cash-2.png"
-                alt=""
-                class="h-full w-full object-contain" />
+                src="./image/pregis-bag-of-coins.png"
+                alt="feature image"
+                class="img" />
             </div>
 
-            <p class="lg:text-center">
+            <p
+              class="feature-item-text text-left px-2 lg:text-center lg:order-2">
               Recharge for the first time and
-              <span class="text-highlight">accumulate 5%</span> of the
-              recharge amount.
+              <span class="text-hl-accent-2 font-bold">accumulate 5%</span> of
+              the amount.
             </p>
           </div>
         </div>
 
-        <div class="mb-14 lg:text-center text-xs ">
-          <h4 class="title-note mb-1">Note:</h4>
-
-          <p>
-            The maximum amount that is available to be provided is 10,000 pesos.
-          </p>
-        </div>
-
-        <button class="btn-reg" id="open-registration-btn">
-          <img src="./img/assets/btn-pre-register.png" alt="" />
-        </button>
-      </div>
-    </section>
-
-    <!-- background -->
-    <section class="about">
-      <div class="about-container">
         <div
-          class="about-container-div max-w-screen-xl mx-auto lg:grid lg:grid-cols-2">
-          <div class="order-2">
-            <h2 class="title">About Us</h2>
+          class="reminder text-center md:px-36 lg:px-[20rem] xl:px-[28rem]">
+          <h3 class="title uppercase text-red-500">Reminder</h3>
+          <p class="sub-title">
+            The maximum amount that is available to be provided is 10,000
+            pesos.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <p class="mb-14">
-              Acewin is an online casino platform that offers a wide range of
-              games, including slots, table games, and live dealer
-              experiences. Known for its user-friendly interface and secure
-              payment options, it provides a fun and thrilling gambling
-              experience for players. Acewin also features various promotions
-              and rewards, ensuring that both new and returning players enjoy
-              exciting opportunities to win.
-            </p>
+    <!-- about us -->
+    <section class="about">
+      <div>
+        <div class="about-container max-w-screen-xl mx-auto pt-16 mb-4 px-2">
+          <div class="header text-center mb-4">
+            <div class="logo">
+              <img src="./image/logo.png" alt="logo" class="w-24 mx-auto" />
+            </div>
+            <h2 class="title uppercase">About Us</h2>
           </div>
 
-          <div class="image lg:order-1">
-            <img src="./img/assets/casino men.png" alt="" class="w-full" />
+          <p class="text-center mb-2 lg:px-24">
+            Acewin is an online casino platform that offers a wide range of
+            games, including slots, table games, and live dealer experiences.
+            Known for its user-friendly interface and secure payment options,
+            it provides a fun and thrilling gambling experience for players.
+          </p>
+
+          <p class="text-center mb-14 lg:px-24">
+            Acewin also features various promotions and rewards, ensuring that
+            both new and returning players enjoy exciting opportunities to
+            win.
+          </p>
+
+          <div class="image px-4">
+            <img src="./image/au-roulette.png" alt="subject" class="w-full" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- recommended games -->
-    <section class="rec px-2">
-      <div class="rec-container max-w-screen-xl mx-auto">
-        <h2 class="title text-center mb-14">
-          Experience the most casino games
-        </h2>
+    <!-- categories -->
+    <section class="category">
+      <div class="bg-line">
+        <img src="./image/catg-background-line.png" alt="" />
+      </div>
+      <div class="category-container max-w-screen-xl mx-auto px-5">
+        <div class="category-items flex flex-col gap-32 lg:flex-row">
+          <div
+            class="group-a flex justify-center items-center lg:justify-start">
+            <div class="category-item">
+              <div
+                class="header text-right mb-10 ms-auto sm:w-[60%] lg:w-[100%] xl:w-[70%]">
+                <h3 class="title glow-text-accent uppercase">Poker Games</h3>
+                <p class="sub-title">
+                  A thrilling blend of skill, strategy, and luck where every
+                  hand is a new chance to outsmart your opponents and claim
+                  the pot!
+                </p>
+              </div>
 
-        <div class="catg-item">
-          <h3 id="catg-title" class="catg-item-title">Slot Games</h3>
-          <p id="catg-desc" class="catg-desc">
-            Spin the reels and chase the excitement! With every turn, you’re
-            one spin away from big wins and endless fun.
-          </p>
+              <div class="image flex items-center sm:ml-[15%] lg:ml-[-15%]">
+                <div class="btn-text lg:order-2">
+                  <button
+                    id="btn-opn-prvw-pkr"
+                    class="btn-play flex items-center">
+                    <img src="./image/btn-video.png" alt="play button" />
+                  </button>
+                  Preview
+                </div>
 
-          <div class="flex justify-center gap-5 mt-7 mb-5">
-            <button class="btn" id="btn-catg-slot">
-              <img
-                src="./img/assets/jackpot.png"
-                alt=""
-                class="w-8"
-                style="filter: invert(1)" />
-            </button>
-            <button class="btn" id="btn-catg-poker">
-              <img
-                src="./img/assets/poker-cards.png"
-                alt=""
-                class="w-8"
-                style="filter: invert(1)" />
-            </button>
-            <button class="btn" id="btn-catg-dice">
-              <img
-                src="./img/assets/casino.png"
-                alt=""
-                class="w-8"
-                style="filter: invert(1)" />
-            </button>
+                <div class="image-wrapper">
+                  <img
+                    src="./image/catg-poker-games.png"
+                    alt="category image" />
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="h-64 w-full lg:w-[50vw] mx-auto">
-            <video id="catg-video" class="w-full h-full" autoplay muted loop>
-              <source
-                src="./img/assets/casino game trailer.mp4"
-                type="video/mp4" />
-            </video>
+          <div
+            class="group-b flex justify-center items-center flex-col gap-32 lg:justify-end">
+            <div class="category-item">
+              <div
+                class="header mb-10 sm:w-[60%] lg:ms-auto lg:w-[100%] xl:w-[70%] xl:ms-0">
+                <h3 class="title glow-text-accent uppercase">Slot Games</h3>
+                <p class="sub-title">
+                  Spin the reels and chase the excitement! With every turn,
+                  you’re one spin away from big wins and endless fun.
+                </p>
+              </div>
+
+              <div class="image flex items-center ml-[-70%] sm:ml-[-5%]">
+                <div class="btn-text order-2 lg:order-1">
+                  <button
+                    id="btn-opn-prvw-slt"
+                    class="btn-play flex items-center">
+                    <img src="./image/btn-video.png" alt="play button" />
+                  </button>
+                  Preview
+                </div>
+
+                <div class="image-wrapper lg:order-2">
+                  <img
+                    src="./image/catg-slot-games.png"
+                    alt="category image" />
+                </div>
+              </div>
+            </div>
+
+            <div class="category-item">
+              <div
+                class="header text-right mb-10 ms-auto sm:w-[60%] lg:w-[100%] xl:text-left xl:w-[70%] xl:ms-0">
+                <h3 class="title glow-text-accent uppercase">
+                  Wheel of fortune
+                </h3>
+                <p class="sub-title">
+                  The wheel of fortune! Bet on your lucky number, color, or
+                  combo, and watch the ball spin for the chance to hit it big.
+                </p>
+              </div>
+
+              <div class="image flex items-center sm:ml-[13%]">
+                <div class="btn-text">
+                  <button
+                    id="btn-opn-prvw-wof"
+                    class="btn-play flex items-center">
+                    <img src="./image/btn-video.png" alt="play button" />
+                  </button>
+                  Preview
+                </div>
+
+                <div class="image-wrapper">
+                  <img
+                    src="./image/catg-wheel-of-fortune.png"
+                    alt="category image" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer px-2 pt-14 pb-3">
-    <div class="footer-container max-w-screen-xl mx-auto">
-      <div class="flex gap-5 justify-center">
-        <a href="#"><img src="./img//assets/soc-sns.png" alt="" class="w-7" /></a>
-        <a href="#"><img src="./img//assets/soc-discord.png" alt="" class="w-7" /></a>
-        <a href="#"><img src="./img//assets/soc-youtube.png" alt="" class="w-7" /></a>
-        <a href="#"><img src="./img//assets/soc-facebook.png" alt="" class="w-7" /></a>
-        <a href="#"><img src="./img//assets/soc-twitter.png" alt="" class="w-7" /></a>
-        <a href="#"><img src="./img//assets/soc-link.png" alt="" class="w-7" /></a>
+  <footer class="footer">
+    <div
+      class="footer-container flex flex-col items-center justify-center pt-16 pb-2 px-2">
+      <img src="./image/logo.png" alt="logo" class="w-24 mb-5" />
+
+      <div class="footer-soc-meds flex gap-4 mb-5">
+        <a href="#"><img src="./image/icon-twitter.png" alt="socmed" class="w-8" /></a>
+        <a href="#"><img src="./image/icon-facebook.png" alt="socmed" class="w-8" /></a>
+        <a href="#"><img src="./image/icon-discord.png" alt="socmed" class="w-8" /></a>
+        <a href="#"><img src="./image/icon-play.png" alt="socmed" class="w-8" /></a>
+        <a href="#"><img src="./image/icon-youtube.png" alt="socmed" class="w-8" /></a>
+        <a href="#"><img src="./image/icon-link.png" alt="socmed" class="w-8" /></a>
       </div>
 
-      <span class="footer-separator mt-5 mb-7"></span>
+      <span class="footer-line mb-5"></span>
 
-      <a href="https://blockwin.fun/acewin/" class="w-24 mx-auto block mb-2"><img src="./img/assets/logo.png" alt="" class="" /></a>
-
-      <p class="text-xs text-center">© 2025 Acewin. All Rights Reserved.</p>
+      <p class="text-xs">© 2025 Acewin. All Rights Reserved.</p>
     </div>
   </footer>
-
-  <script>
-    const olb = document.querySelector("#open-live-btn");
-    const lvw = document.querySelector(".live-video-wrapper");
-
-    olb.addEventListener("click", () => {
-      lvw.classList.add("active");
-    });
-
-    lvw.addEventListener("click", function(event) {
-      if (event.target === this) {
-        this.classList.remove("active");
-      }
-    });
-
-    const orbs = document.querySelectorAll(".btn-reg");
-    const fw = document.querySelector(".form-wrapper");
-
-    orbs.forEach((orb) => {
-      orb.addEventListener("click", () => {
-        fw.classList.add("active");
-      });
-    });
-
-    fw.addEventListener("click", function(event) {
-      if (event.target === this) {
-        this.classList.remove("active");
-      }
-    });
-
-    const bcs = document.querySelector("#btn-catg-slot");
-    const bcp = document.querySelector("#btn-catg-poker");
-    const bcd = document.querySelector("#btn-catg-dice");
-    const cv = document.querySelector("#catg-video");
-    const ct = document.querySelector("#catg-title");
-    const cd = document.querySelector("#catg-desc");
-
-    bcs.addEventListener("click", function(event) {
-      ct.innerHTML = "Slot";
-      cd.innerHTML =
-        " Spin the reels and chase the excitement! With every turn, you’re one spin away from big wins and endless fun.";
-    });
-
-    bcp.addEventListener("click", function(event) {
-      ct.innerHTML = "Poker";
-      cd.innerHTML =
-        "A thrilling blend of skill, strategy, and luck where every hand is a new chance to outsmart your opponents and claim the pot!";
-
-      cv.src = "./img/assets/casino game trailer 2.mp4";
-    });
-
-    bcd.addEventListener("click", function(event) {
-      ct.innerHTML = "Rollete";
-      cd.innerHTML =
-        "The wheel of fortune! Bet on your lucky number, color, or combo, and watch the ball spin for the chance to hit it big.";
-      cv.src = "./img/assets/casino game trailer 3.mp4";
-    });
-
-    //   const cab = document.querySelector("#close-ads-btn");
-    //   const ads = document.querySelector(".ads-wrapper");
-
-    //   cab.addEventListener("click", () => {
-    //     ads.style.display = "none";
-    //   });
-  </script>
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>
