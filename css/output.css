@@ -3320,17 +3320,17 @@ main .category-container .group-b .category-item:nth-child(2) .image .image-wrap
 @media (min-width: 1024px) {
   .pregis .pregis-container .btn-play {
     left: unset;
-    right: -7%;
+    right: -5%;
     bottom: unset;
-    top: -7%;
+    top: -5%;
     transform: unset;
   }
 }
 
 @media (min-width: 1280px) {
   .pregis .pregis-container .btn-play {
-    right: -7%;
-    top: -7%;
+    right: -3%;
+    top: -4%;
   }
 }
 
