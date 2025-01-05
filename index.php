@@ -170,7 +170,7 @@
   </div>
 
   <!-- error handler -->
-  <div id="stsmdl" class="modal px-3 active">
+  <div id="stsmdl" class="modal px-3">
     <div class="card">
       <!-- <button><img src="./image/icon-close.png" alt="close" /></button> -->
 
