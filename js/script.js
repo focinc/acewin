@@ -48,7 +48,7 @@ if (urlParams.has("stats") && urlParams.get("stats") === "success") {
   modalIcon.src = "./image/icon-check.png";
   modalTitle.innerHTML = "Registration Successful";
   modalContent.innerHTML =
-    "Your account has been successfully created. You can now log in and start using our services.";
+    "Your account has been successfully created! As a special welcome, you've received a 100 pesos bonus to get started.";
 
   errModal.classList.add("active");
 }
