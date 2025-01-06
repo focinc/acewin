@@ -41,7 +41,9 @@ if (urlParams.has("stats") && urlParams.get("stats") === "phoneexisted") {
     "The contact number you entered is already registered in our system. Please use a different contact number or log in to your account.";
 
   errModal.classList.add("active");
-} else if (urlParams.has("stats") && urlParams.get("stats") === "success") {
+}
+
+if (urlParams.has("stats") && urlParams.get("stats") === "success") {
   modalIconStatus.classList.add("success");
   modalIcon.src = "./image/icon-check.png";
   modalTitle.innerHTML = "Registration Successful";
