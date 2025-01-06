@@ -792,6 +792,14 @@ main {
       border-radius: 100%;
       background-color: #ff4848;
 
+      &.error {
+        background-color: #ff4848;
+      }
+
+      &.success {
+        background-color: #51ff48;
+      }
+
       img {
         width: 2rem;
         object-fit: contain;

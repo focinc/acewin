@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($result->num_rows > 0) {
             // Phone number exists
-            header("Location: https://blockwin.fun/acewin?error=phoneexisted");
+            header("Location: https://blockwin.fun/acewin?stats=phoneexisted");
             exit();
         } else {
             // Insert new record
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             // Redirect to success page
-            header("Location: https://blockwin.fun/acewin");
+            header("Location: https://blockwin.fun/acewin?stats=succes");
             exit();
         }
     }

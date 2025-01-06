@@ -3386,6 +3386,14 @@ main .category-container .group-b .category-item:nth-child(2) .image .image-wrap
   background-color: #ff4848;
 }
 
+.modal .card .icon.error {
+  background-color: #ff4848;
+}
+
+.modal .card .icon.success {
+  background-color: #51ff48;
+}
+
 .modal .card .icon img {
   width: 2rem;
   -o-object-fit: contain;

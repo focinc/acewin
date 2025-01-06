@@ -28,7 +28,25 @@ closeErrButton.addEventListener("click", () => {
 });
 
 const urlParams = new URLSearchParams(window.location.search);
+const modalTitle = document.getElementById("mdl-ttl");
+const modalContent = document.getElementById("mdl-ctnt");
+const modalIcon = document.getElementById("mdl-icn");
+const modalIconStatus = document.getElementById("mdl-icn-stts");
 
-if (urlParams.has("error") && urlParams.get("error") === "phoneexisted") {
+if (urlParams.has("stats") && urlParams.get("stats") === "phoneexisted") {
+  modalIconStatus.classList.add("error");
+  modalIcon.src = "./image/icon-close.png";
+  modalTitle.innerHTML = "Contact Number Already Exists";
+  modalContent.innerHTML =
+    "The contact number you entered is already registered in our system. Please use a different contact number or log in to your account.";
+
+  errModal.classList.add("active");
+} else if (urlParams.has("stats") && urlParams.get("stats") === "success") {
+  modalIconStatus.classList.add("success");
+  modalIcon.src = "./image/icon-check.png";
+  modalTitle.innerHTML = "Registration Successful";
+  modalContent.innerHTML =
+    "Your account has been successfully created. You can now log in and start using our services.";
+
   errModal.classList.add("active");
 }
