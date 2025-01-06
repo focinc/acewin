@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user_id = generateUserID();
 
         // Check if the phone number already exists
-        $stmt = $conn->prepare("SELECT * FROM blckwin_T_DAT_users WHERE phone_number = ?");
+        $stmt = $conn->prepare("SELECT * FROM registrations WHERE phone_number = ?");
         $stmt->bind_param("s", $phone_number);
 
         if (!$stmt->execute()) {
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         } else {
             // Insert new record
-            $stmt = $conn->prepare("INSERT INTO blckwin_T_DAT_users (userid, full_name, phone_number) VALUES (?, ?, ?)");
+            $stmt = $conn->prepare("INSERT INTO registrations (userid, full_name, phone_number) VALUES (?, ?, ?)");
             $stmt->bind_param("sss", $user_id, $full_name, $phone_number);
 
             if (!$stmt->execute()) {
