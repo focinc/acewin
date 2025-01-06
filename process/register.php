@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             // Redirect to success page
-            header("Location: https://blockwin.fun/acewin?stats=succes");
+            header("Location: https://blockwin.fun/acewin?stats=success");
             exit();
         }
     }
