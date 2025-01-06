@@ -1,5 +1,5 @@
 <?php
-$servername = "148.135.137.171";
+$servername = "adserver.cmpxqpkk4nrk.ap-southeast-1.rds.amazonaws.com";
 $username = "devy";
 $password = "admin2024";
 $dbname = "BLCKWINFUN";
