@@ -2771,7 +2771,7 @@ main .hero-container .hero-content {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1920px) {
   main .hero-container .hero-content {
     transform: scale(1.1);
   }
