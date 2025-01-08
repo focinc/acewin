@@ -2786,6 +2786,7 @@ main .feature {
 
 main .feature-container .header .title {
   font-size: 2rem;
+  font-family: "Kanit", serif;
   font-weight: bold;
   line-height: 2.5rem;
 }
@@ -2797,6 +2798,18 @@ main .feature-container .header .title {
   }
 }
 
+@media (min-width: 1024px) {
+  main .feature-container .header .title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  main .feature-container .header .sub-title {
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+  }
+}
+
 main .feature-container .feature-item {
   position: relative;
 }
@@ -2804,9 +2817,13 @@ main .feature-container .feature-item {
 @media (min-width: 1024px) {
   main .feature-container .feature-item {
     width: 20rem;
-    display: grid;
-    grid-template-rows: 15rem auto;
-    place-items: center;
+    padding-block: 1rem 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .feature-container .feature-item {
+    width: 25rem;
     padding-block: 1rem 2rem;
   }
 }
@@ -2830,6 +2847,12 @@ main .feature-container .feature-item-img {
 @media (min-width: 1024px) {
   main .feature-container .feature-item-img {
     width: 15rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .feature-container .feature-item-img {
+    width: 20rem;
   }
 }
 
@@ -2877,7 +2900,7 @@ main .feature-container .feature-item-text {
 
 @media (min-width: 1024px) {
   main .feature-container .feature-item-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   main .feature-container .feature-item::before {
@@ -2897,6 +2920,16 @@ main .feature-container .reminder .title {
   font-weight: bold;
 }
 
+@media (min-width: 1024px) {
+  main .feature-container .reminder .title {
+    font-size: 2rem;
+  }
+}
+
+main .feature-container .reminder .sub-title {
+  font-size: 1.1rem;
+}
+
 main .about {
   position: relative;
   background-image: url("../image/au-background.png");
@@ -2910,7 +2943,14 @@ main .about > div {
 
 main .about .about-container .header .title {
   font-size: 2rem;
+  font-family: "Kanit", serif;
   font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  main .about .about-container .header .title {
+    font-size: 3rem;
+  }
 }
 
 main .about .about-container p {
@@ -3000,6 +3040,17 @@ main .category-container .category-items .category-item .header .title {
   font-size: 2rem;
   font-weight: bold;
   color: #fed871;
+}
+
+@media (min-width: 1024px) {
+  main .category-container .category-items .category-item .header .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  main .category-container .category-items .category-item .header .sub-title {
+    font-size: 1.2rem;
+  }
 }
 
 main .category-container .category-items .category-item .image {
@@ -3601,6 +3652,10 @@ main .category-container .group-b .category-item:nth-child(2) .image .image-wrap
 
   .xl\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .xl\:w-\[80\%\] {
+    width: 80%;
   }
 
   .xl\:px-\[24rem\] {

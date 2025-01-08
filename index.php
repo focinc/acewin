@@ -328,7 +328,7 @@
               <div class="logo">
                 <img src="./image/logo.png" alt="logo" class="w-24 mx-auto" />
               </div>
-              <h2 class="title uppercase">About Us</h2>
+              <h2 class="title glow-text-white uppercase">About Us</h2>
             </div>
 
             <p class="text-center mb-2 lg:px-24">
@@ -363,7 +363,7 @@
             >
               <div class="category-item">
                 <div
-                  class="header text-right mb-10 ms-auto sm:w-[60%] lg:w-[100%] xl:w-[70%]"
+                  class="header text-right mb-10 ms-auto sm:w-[60%] lg:w-[100%] xl:w-[80%]"
                 >
                   <h3 class="title glow-text-accent uppercase">Poker Games</h3>
                   <p class="sub-title">
@@ -399,7 +399,7 @@
             >
               <div class="category-item">
                 <div
-                  class="header mb-10 sm:w-[60%] lg:ms-auto lg:w-[100%] xl:w-[70%] xl:ms-0"
+                  class="header mb-10 sm:w-[60%] lg:ms-auto lg:w-[100%] xl:w-[80%] xl:ms-0"
                 >
                   <h3 class="title glow-text-accent uppercase">Slot Games</h3>
                   <p class="sub-title">

@@ -190,6 +190,7 @@ main .feature {
 }
 main .feature-container .header .title {
   font-size: 2rem;
+  font-family: "Kanit", serif;
   font-weight: bold;
   line-height: 2.5rem;
 }
@@ -199,15 +200,30 @@ main .feature-container .header .title {
     line-height: 3.5rem;
   }
 }
+@media (min-width: 1024px) {
+  main .feature-container .header .title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .feature-container .header .sub-title {
+    font-size: 1.2rem;
+    line-height: 3.5rem;
+  }
+}
 main .feature-container .feature-item {
   position: relative;
 }
 @media (min-width: 1024px) {
   main .feature-container .feature-item {
     width: 20rem;
-    display: grid;
-    grid-template-rows: 15rem auto;
-    place-items: center;
+    padding-block: 1rem 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  main .feature-container .feature-item {
+    width: 25rem;
     padding-block: 1rem 2rem;
   }
 }
@@ -227,6 +243,11 @@ main .feature-container .feature-item-img {
 @media (min-width: 1024px) {
   main .feature-container .feature-item-img {
     width: 15rem;
+  }
+}
+@media (min-width: 1280px) {
+  main .feature-container .feature-item-img {
+    width: 20rem;
   }
 }
 main .feature-container .feature-item-img.a {
@@ -265,7 +286,7 @@ main .feature-container .feature-item-text {
 }
 @media (min-width: 1024px) {
   main .feature-container .feature-item-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1024px) {
@@ -284,6 +305,14 @@ main .feature-container .reminder .title {
   font-size: 1.8rem;
   font-weight: bold;
 }
+@media (min-width: 1024px) {
+  main .feature-container .reminder .title {
+    font-size: 2rem;
+  }
+}
+main .feature-container .reminder .sub-title {
+  font-size: 1.1rem;
+}
 main .about {
   position: relative;
   background-image: url("../image/au-background.png");
@@ -295,7 +324,13 @@ main .about > div {
 }
 main .about .about-container .header .title {
   font-size: 2rem;
+  font-family: "Kanit", serif;
   font-weight: bold;
+}
+@media (min-width: 1024px) {
+  main .about .about-container .header .title {
+    font-size: 3rem;
+  }
 }
 main .about .about-container p {
   font-size: 1.1rem;
@@ -372,6 +407,17 @@ main .category-container .category-items .category-item .header .title {
   font-size: 2rem;
   font-weight: bold;
   color: #fed871;
+}
+@media (min-width: 1024px) {
+  main .category-container .category-items .category-item .header .title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .category-container .category-items .category-item .header .sub-title {
+    font-size: 1.2rem;
+  }
 }
 main .category-container .category-items .category-item .image {
   width: 25rem;
