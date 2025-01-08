@@ -2964,6 +2964,12 @@ main .about .about-container p {
   font-size: 1.1rem;
 }
 
+@media (min-width: 1280px) {
+  main .about .about-container p {
+    font-size: 1.3rem;
+  }
+}
+
 main .about .about-container .image {
   margin-inline: auto;
 }
