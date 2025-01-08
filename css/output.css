@@ -2797,7 +2797,7 @@ main .feature-container .header .title {
   line-height: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   main .feature-container .header .title {
     font-size: 3rem;
     line-height: 3.5rem;
@@ -2863,7 +2863,7 @@ main .feature-container .feature-item-img {
 }
 
 main .feature-container .feature-item-img.a {
-  margin-left: -30%;
+  margin-left: -20%;
 }
 
 @media (min-width: 640px) {
@@ -2879,7 +2879,7 @@ main .feature-container .feature-item-img.a {
 }
 
 main .feature-container .feature-item-img.b {
-  margin-right: -30%;
+  margin-right: -20%;
 }
 
 @media (min-width: 640px) {
@@ -2895,18 +2895,19 @@ main .feature-container .feature-item-img.b {
 }
 
 main .feature-container .feature-item-text {
-  font-size: 1.125rem;
+  font-size: 1.3rem;
+  font-family: "Luckiest Guy", serif;
 }
 
 @media (min-width: 640px) {
   main .feature-container .feature-item-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
 @media (min-width: 1024px) {
   main .feature-container .feature-item-text {
-    font-size: 1.3rem;
+    line-height: 2rem;
   }
 
   main .feature-container .feature-item::before {
@@ -2933,7 +2934,7 @@ main .feature-container .reminder .title {
 }
 
 main .feature-container .reminder .sub-title {
-  font-size: 1.1rem;
+  font-size: 1.5 rem;
 }
 
 main .about {
@@ -2970,6 +2971,12 @@ main .about .about-container .image {
 @media (min-width: 640px) {
   main .about .about-container .image {
     width: 25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .about .about-container .image {
+    width: 30rem;
   }
 }
 
@@ -3045,6 +3052,7 @@ main .category-container .category-items .category-item {
 main .category-container .category-items .category-item .header .title {
   font-size: 2rem;
   font-weight: bold;
+  font-family: "Kanit", serif;
   color: #fed871;
 }
 
