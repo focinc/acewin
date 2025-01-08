@@ -182,6 +182,10 @@ main {
           transform: scale(1);
         }
 
+        @media (min-width: 1280px) {
+          transform: scale(1.1);
+        }
+
         .text {
           font-size: 1.5rem;
           line-height: 2rem;
